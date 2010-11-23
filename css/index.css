@@ -1,0 +1,141 @@
+body {
+  font-family:Arial;
+  font-size:12px;
+  margin:0px;
+  padding:0px;
+  background-color:#000;
+  background-image:url('../media/oc2.jpg');
+  color:#fff;
+  }
+  
+  #contain {
+      width:900px;
+      margin:20px;
+      padding-left:20px
+  }
+  
+  .para_div {
+      background-image:url('../media/tr1.png');
+      /* border:1px solid #162329; */
+      padding:20px;
+      color:#517c93;
+      margin-top:0px;
+  }
+  
+  a:link {
+      color:#669cb9;
+  }
+  
+  a:visited {
+      color:#822313;
+  }
+  
+  .tip1 {
+      width:336px;
+      height:238px;
+      padding:0px;
+      margin:0px;
+      background-image:url('../media/1b.png');
+      color:#000;
+      font-weight:bold;
+      font-size:14px;
+      text-align:center;
+      display:none;
+      
+  }
+  
+  .tt_contents {
+      background:none;
+      text-align:center;
+      padding:20px 20px 20px 20px;
+      width:60%;
+      margin-top:80px;
+      margin-left:auto;
+      margin-right:auto;
+      background-image:url('../media/tr2.png');
+  }
+  
+  .kitty {
+      background-image:url('../media/frollick.gif');
+      width:280px;
+      height:200px;
+  }
+  
+  .mm {
+      background-image:url('../media/mm.png');
+  }
+  
+  .majorblock1 {
+      border:1px dotted #2a4355;
+      margin:20px 0px 0px 0px;
+  }
+  
+  h3 {
+      margin-left:20px;
+  }
+  
+  
+  #title {
+      font-weight:bold;
+      font-size:19px;
+      padding-left:0px;
+  }
+  
+  #title a {
+      border-left:2px dotted #2a4355;
+      padding-left:20px;
+      text-decoration:none;
+  }
+  #title a:link, #title a:visited {
+  color:#de1f1f
+  }
+  
+  .display_area {
+      display:none;
+  }
+  
+  .default_show {
+      display:block;
+  }
+  
+  .code_example {
+      padding:30px;
+  }
+  
+  code {
+      width:100%;
+  }
+  
+  pre {
+     display: block;
+     margin: 2em 0;
+     white-space: pre;
+     overflow: auto;
+     width: 100%;
+     line-height: 1.4;
+     border: 1px solid #ccc;
+     background: #000;
+     padding: 8px;
+  }
+
+  /* JS: adding CODE captions */
+  .js {
+      color:#fff;
+  }
+  .htm {
+      color:#72a172;
+  }
+  
+  .code_talk {
+      margin-left:20px;
+      margin-bottom:20px;
+      color:#bebd57;
+      background-image:url('../media/tr1.png');
+  }
+  .code_talk a:link, .code_talk a:visited {
+      font-weight:bold;
+      color:#e3e268;
+     }
+      
+      
+  
