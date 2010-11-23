@@ -8,6 +8,17 @@ body {
   color:#fff;
   }
   
+  .toggle1 {
+      cursor:pointer;cursor:hand;
+      font-size:17px;
+      margin:8px 0px 8px 20px;
+
+  }
+  
+  .toggle1 div {
+      cursor:pointer;cursor:hand;
+  }
+  
   #contain {
       width:900px;
       margin:20px;
@@ -44,6 +55,15 @@ body {
       
   }
   
+  .style3 {
+       display:none;
+       color:red;
+ 
+  }
+  #block4_append {
+      	cursor:pointer;cursor:hand
+  }
+  
   .tt_contents {
       background:none;
       text-align:center;
@@ -71,7 +91,7 @@ body {
   }
   
   h3 {
-      margin-left:20px;
+      
   }
   
   

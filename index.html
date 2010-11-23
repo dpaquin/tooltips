@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>t</title>
+	<title>JQuerytools Tooltip thingy</title>
 	<meta name="author" content="Dan Paquin">
 	<!-- Date: 2010-11-02 -->
 	<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
@@ -28,7 +28,7 @@
         <p id="title" class="para_div"><a href="http://flowplayer.org/tools/tooltip/index.html">Flowplayer's Tooltip</a></p>
         <!-- MAJOIR BLOCK 1 -->
         <div class="majorblock1" id="majorbock_1">
-            <h3 class="toggle1">Blocks in blocks</h3>
+            <div class="toggle1"><span>Blocks in blocks</span><div style="float:right;color:red;margin-right:30px">^</div></div>
             <div class="display_area">
                 <div class="code_example">
     <div class="htm"><pre>
@@ -55,7 +55,7 @@
             
             <!-- MAJOIR BLOCK 2 -->
         <div class="majorblock1" id="majorbock_2">
-            <h3 class="toggle1">Blocks in parapgraphs</h3>
+            <div class="toggle1"><span>Blocks in parapgraphs</span><div style="float:right;color:red;margin-right:30px">^</div></div>
             <div class="display_area">
                 <div class="code_talk">
                     The tooltip's 'tip' can be fairly complicated block elements. Where should they  <a href="para_example.html" target="_para">live</a>? 
@@ -69,7 +69,7 @@
             <!-- -- >
                      <!-- MAJOR BLOCK 3 -->
                     <div class="majorblock1" id="majorbock_3">
-                        <h3 class="toggle1">Many triggers, one Tip</h3>
+                        <div class="toggle1"><span>Many triggers, one Tip</span><div style="float:right;color:red;margin-right:30px">^</div></div>
                         <div class="display_area">
                         <div class="code_talk">
                             Tip placed outside inline element containing the trigger.
@@ -104,11 +104,11 @@
             <!-- -- >
             <!-- -- >
                      <!-- MAJOR BLOCK 4 -->
-                    <div class="majorblock1" id="majorbock_3">
-                        <h3 class="toggle1">Create and place the tip dynamically.</h3>
+                    <div class="majorblock1" id="majorbock_4">
+                        <div class="toggle1"><span>Place the tip dynamically.</span><div style="float:right;color:red;margin-right:30px">^</div></div>
                         <div class="display_area">
                         <div class="code_talk">
-                           Find the first block parent.
+                           Just prepend it to the body because we know that's a block element.
                         </div>
 
                             <div class="code_example">
@@ -116,16 +116,24 @@
 ... Surveys showed how the &lt;span&gt;
     &lt;em&gt;
         &lt;strong&gt;
-            &lt;a  href="javascript:void(0)" class="trigger2">Giant Fireball&lt;/a&gt;
+            &lt;a  href="javascript:void(0)" class="trigger2"&gt;
+                Giant Fireball
+            &lt;/a&gt;
+            &lt;div id="single_tip2" class="style3 kitty"&gt;&lt;div class="tt_contents "&gt;
+                may or may not be THE VERY NEXT ELEMENT
+            &lt;/div&gt;
         &lt;/strong&gt;
     &lt;/em&gt;&lt;/span&gt;s are bunching up near ...
                 </code></pre></div>
                             </div><!-- end code_example -->
                             <p class="para_div">
-                                Reporting in the April 1, 2008 issue of The Astrophysical Journal, astronomers claimed to have found evidence of an intermediate-mass black hole at the center of Omega Centauri. The observations were made with NASA's Hubble Space Telescope and Gemini Observatory on Cerro Pachon in Chile.[14] Hubble's Advanced Camera for Surveys showed how the <span><em><strong><a  href="javascript:void(0)" class="trigger2">Giant Fireball</a></strong></em></span>s are bunching up near the center of Omega Centauri, as seen in the gradual increase in <span><em><strong><a  href="javascript:void(0)" class="trigger2">Giant Fireball</a></strong></em></span> light near the center. Measuring the speed of the <span><em><strong><a  href="javascript:void(0)" class="trigger2">Giant Fireball</a></strong></em></span>s swirling near the cluster's center with the Gemini Observatory, the astronomers found that the <span><em><strong><a  href="javascript:void(0)" class="trigger2">Giant Fireball</a></strong></em></span>s closer to the core are moving faster than the <span><em><strong><a  href="javascript:void(0)" class="trigger2">Giant Fireball</a></strong></em></span>s farther away. The measurement implies that some unseen matter at the core has gravitational interactions with <span><em><strong><a  href="javascript:void(0)" class="trigger2">Giant Fireball</a></strong></em></span>s near it. By comparing these results with standard models, the astronomers determined that the most likely cause is the gravitational pull of a massive, dense object. They also used models to calculate the black hole's mass, ~4.0 x 104 solar masses.[14]
+                            Reporting in the April 1, 2008 issue of The Astrophysical Journal, astronomers claimed to have found evidence of an intermediate-mass black hole at the center of Omega Centauri. The observations were made with NASA's Hubble Space Telescope and Gemini Observatory on Cerro Pachon in Chile.[14] Hubble's Advanced Camera for Surveys showed how the <span><em><strong><a  href="javascript:void(0)" class="trigger3">Giant Fireball</a><div id="single_tip2" class="style3 kitty"><div class="tt_contents ">may or may not be THE VERY NEXT ELEMENT</div></div></strong></em></span>s are bunching up near the center of Omega Centauri, as seen in the gradual increase in <span><em><strong><a  href="javascript:void(0)" class="trigger3">Giant Fireball</a></strong></em></span> light near the center. Measuring the speed of the <span><em><strong><a  href="javascript:void(0)" class="trigger3">Giant Fireball</a></strong></em></span>s swirling near the cluster's center with the Gemini Observatory, the astronomers found that the <span><em><strong><a  href="javascript:void(0)" class="trigger3">Giant Fireball</a></strong></em></span>s closer to the core are moving faster than the <span><em><strong><a  href="javascript:void(0)" class="trigger3">Giant Fireball</a></strong></em></span>s farther away. The measurement implies that some unseen matter at the core has gravitational interactions with <span><em><strong><a  href="javascript:void(0)" class="trigger3">Giant Fireball</a></strong></em></span>s near it. By comparing these results with standard models, the astronomers determined that the most likely cause is the gravitational pull of a massive, dense object. They also used models to calculate the black hole's mass, ~4.0 x 104 solar masses.[14]
                             </p>
-
-                        </div><!-- end display_area -->
+    <p id="block4_append">
+       <span style="margin-left:30px">.prependT("body").show()</span>
+    </p>
+        
+                </div><!-- end display_area -->
                     </div><!-- end major_block -->
             
             
@@ -138,6 +146,5 @@
             
             
     </div><!-- end contain -->
-
 </body>
 </html>

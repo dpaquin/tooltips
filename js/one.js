@@ -7,15 +7,26 @@ function init() {
         tip:'#single_tip'
     });
     
-    
-    $('.toggle1').click(function(){
-        $(this).parent().find('.display_area').toggle();
-        var major_block = $(this).parent();
-        var thetop = $('#title');
-        // toggle all off first
-        thetop.after($(this).parent());
+    // major block show
+    $('.toggle1 span').click(function(){
+        
+        $('.display_area').hide('fast');
+        $(this).parent().parent().find('.display_area').toggle();
     });
+    $('.toggle1 div').click(function(){
+        $(this).parent().parent().find('.display_area').toggle();
+     });
     
+    // initalize block 4, move tips
+    //
+    $('.trigger3').tooltip({
+        tip:'#single_tip2'
+    });
+    $('#block4_append').click(function(){
+        $('#majorbock_4').find('#single_tip2').prependTo("body").show();
+
+    });
+
 }
 
 function showSomething() {
