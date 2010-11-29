@@ -1,3 +1,54 @@
+/* sizeable_tip TOOLTIP */
+
+.sizeable_tip {
+	  display:none;  
+     /*border:1px solid red;*/
+	 padding:0px;
+     margin:0px;
+     text-align:left;
+     width:123px;
+}
+
+.tipTop {
+    background: transparent url('../media/abe_top.png') no-repeat top; 
+    padding:0px 0px 0px 0px;
+    padding-top:28px;
+    margin-left:0px;
+	width:123px;
+	font-size:11px;
+	color:#000;
+	background-position: 0 0;
+
+
+}
+.tipMid {
+    background: transparent url('../media/abe_mid.png') repeat-y;
+    padding: 0px 0px 10px 0px;
+    margin-top:0px;
+    width:123px;
+    color:#fff;
+
+}
+    .hat_text {
+        text-align:center;
+        width:68px;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:10px;
+    }
+    
+    
+.tipBtm {
+    background: transparent url('../media/abe_bot.png') no-repeat bottom; 
+    height: 148px;
+    padding: 0px; 
+    width:123px;
+}
+
+
+
+/*  */
+
 body {
   font-family:Arial;
   font-size:12px;
@@ -81,6 +132,12 @@ body {
       height:200px;
   }
   
+  #tip_dynamic {
+             display:none;
+      background-image:url('../media/jackelam.jpg');
+            width:391px;
+            height:512px;
+  }
   .mm {
       background-image:url('../media/mm.png');
   }
