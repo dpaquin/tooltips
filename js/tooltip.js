@@ -87,9 +87,9 @@
 			 left = conf.relative ? trigger.position().left : trigger.offset().left,
 			 pos = conf.position[0];
 			 
-        debug.log('starting top: ' + top);
+       
 		top  -= tip.outerHeight() - conf.offset[0];
-		debug.log('tip.outerHeight(); ' + tip.outerHeight());
+		
 		//top = 0;
 		
 		left += trigger.outerWidth() + conf.offset[1];
@@ -103,7 +103,7 @@
 		
 		// adjust Y		
 		var height = tip.outerHeight() + trigger.outerHeight();
-		if (pos == 'center') 	{ top += height / 2; debug.log('height - top: ' + top, (height / 2))}
+		if (pos == 'center') 	{ top += height / 2; }
 		if (pos == 'bottom') 	{ top += height; }
 		
 		
@@ -113,7 +113,6 @@
 		if (pos == 'center') 	{ left -= width / 2; }
 		if (pos == 'left')   	{ left -= width; }	 
 		
-		debug.log(top, left);
 		return {top: top, left: left};
 	}		
 
