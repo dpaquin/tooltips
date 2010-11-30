@@ -140,8 +140,10 @@ body {
   }
   .mm {
       background-image:url('../media/mm.png');
+       width:200px;
+       height:142px;
   }
-  
+  .mm .tt_contents{margin-top:10px; }
   .majorblock1 {
       border:1px dotted #2a4355;
       margin:20px 0px 0px 0px;
